@@ -1,0 +1,200 @@
+/* General form container styling */
+.appointment-form {
+  max-width: 480px;
+  margin: 50px auto;
+  padding: 40px;
+  background: linear-gradient(135deg, #a8ff78, #78ffd6);
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  font-family: 'Arial', sans-serif;
+  color: #2c3e50;
+}
+
+/* Form heading */
+.appointment-form h2 {
+  text-align: center;
+  color: #2980b9;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+/* Form fields */
+.appointment-form form div {
+  margin-bottom: 20px;
+}
+
+.appointment-form input,
+.appointment-form select,
+.appointment-form textarea {
+  width: 100%;
+  padding: 0.6rem;
+  font-size: 0.9rem;
+  border: 1px solid #bdc3c7;
+  border-radius: 5px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.appointment-form input::placeholder,
+.appointment-form textarea::placeholder {
+  font-size: 0.8rem;
+}
+
+.appointment-form input:focus,
+.appointment-form select:focus,
+.appointment-form textarea:focus {
+  border-color: #27ae60;
+  box-shadow: 0 0 5px rgba(39, 174, 96, 0.5);
+  outline: none;
+}
+
+.appointment-form select {
+  background-color: #ecf0f1;
+}
+
+/* Text area */
+.appointment-form textarea {
+  min-height: 100px;
+  resize:none;
+}
+
+/* Error messages */
+.appointment-form p {
+  margin-top: 5px;
+  color: #e74c3c;
+  font-size: 0.875rem;
+  font-weight:bold;
+}
+
+/* Submit button */
+.appointment-form button {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  background-color: #27ae60;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.appointment-form button:hover {
+  background-color: #218c52;
+  transform: scale(1.02);
+}
+
+.appointment-form button:active {
+  background-color: #1e7b45;
+}
+
+/* Label for the date */
+.appointment-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #34495e;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .appointment-form {
+    padding: 30px;
+  }
+
+  .appointment-form h2 {
+    font-size: 1.8rem;
+  }
+
+  .appointment-form button {
+    font-size: 1rem;
+  }
+}
+
+
+.admin-view {
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  font-family: Arial, sans-serif;
+}
+
+.admin-view h2 {
+  text-align: center;
+  color: #007bff;
+}
+
+.appointments-table {
+  width: 100%;
+  margin: 20px 0;
+  border-collapse: collapse;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: whitesmoke;
+}
+
+.appointments-table th, 
+.appointments-table td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid black;
+}
+
+.appointments-table th {
+  background: #007bff;
+  color: white;
+  font-weight: bold;
+}
+
+.appointments-table tr:nth-child(even) {
+  background:white;
+}
+
+.appointments-table tr:hover {
+  background: #007bff;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url(../public/images/img2.jpg);
+  margin: 0;
+  padding: 0;
+  background-size: auto ; /* Ensure the image covers the entire body */
+  background-position-x: -28rem; /* Center the image */
+  background-attachment: fixed; /* Ensure it stays in place on scroll */
+  background-blend-mode: overlay; /* Blend the image and gradient */
+  color: black; /* Set text to contrast with the background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-header {
+  text-align: center;
+  color: whitesmoke;
+}
+
+.admin-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff; /* Primary Blue */
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.admin-button:hover {
+  background-color: #0056b3; /* Darker Blue */
+  transform: scale(1.05);
+  text-decoration: underline;
+}
+
+.admin-button:active {
+  background-color: #003d80; /* Even Darker Blue */
+  transform: scale(1);
+}

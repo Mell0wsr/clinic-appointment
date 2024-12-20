@@ -1,0 +1,15 @@
+{
+  "name": "backend",
+  "packageManager": "yarn@4.5.3",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "firebase-tools": "^13.29.1",
+    "mongod": "^2.0.0",
+    "mongodb": "^6.12.0",
+    "mongoose": "^8.9.1",
+    "nodemon": "^3.1.9"
+  }
+}
